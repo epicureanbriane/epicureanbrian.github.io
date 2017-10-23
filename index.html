@@ -1,55 +1,22 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
   <title>個人頁面</title>
-  <meta name="viewport" content="width=device-width">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/css.css">
-
-  <!--引入初始化 Parse 的 js 檔案-->
-  <script type="text/javascript" src="js/key.js"></script>
-  <script  type="text/javascript">
-  
-    $(document).ready(function(){
-     console.log("登入前的 Parse.User.current()  : ",Parse.User.current()) ;
-      
-      alert("未登入");
-      window.location="login.html";
-      return null;
-      /* 顯示登入者名稱，避免未登入者進入此頁面*/
-          //提示 1 : 可用轉址的方式，讓未登入的使用者轉址到 logIn.html
-          //提示 2 : 請在 <span id="name" > 中顯示使用者名稱，在 <span id="role">中顯示角色  
-      
-    });
-  
-    $(document).on('click',"#logOut",function(){
-      console.log("Logout clicked");
-      var currentUser = Parse.User.current();
-if (currentUser) {
-    // do stuff with the user
-} else {
-    alert("未登入");
-      window.location="login.html";
-      return null;
-}
-      /* 執行登出動作，並轉址到 logIn 頁面*/
-        // 可參考 : https://parse.com/docs/js/guide#users-current-user
-
-      /* 結束 */
-    });
-  $(#name).text()
-  </script>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px 'Songti TC'; color: #0000ee; -webkit-text-stroke: #0000ee}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+  </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="row">
-      <h2>你是已經簽到的<span id="role"></span>：<span id="name"></span></h2>
-      <div id="logOut" class="btn btn-danger">登出</div>
-      <a class="btn" href="attendantList.html">老師頁面</a>
-    </div>
-  </div>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; line-height: 22.0px; font: 18.0px 'Songti TC'; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><b>你是已經簽到的：</b></span></h2>
+<p class="p2"><span class="s1">登出!</span></p>
+<p class="p3"><span class="s2"><a href="file:///Users/epicureanbrian/Downloads/GitHub/epicureanbrian.github.io/attendantList.html">老師頁面</a></span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
